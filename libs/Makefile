@@ -1,5 +1,4 @@
-COMMAND1 = chmod +wrx configure && (CC=$(DEVKITPPC)/bin/powerpc-eabi-gcc CXX=$(DEVKITPPC)/bin/powerpc-eabi-g++ ./configure --host=powerpc-eabi --build=powerpc-eabi-gnu --prefix="${DEVKITPRO}/portlibs/ppc" --libdir="${DEVKITPRO}/portlibs/ppc/lib" --disable-shared && \
-      make && sudo -E make install)
+COMMAND1 = chmod +wrx configure && ./configure && make && make install
 
 all: dir1 dir2 dir3
 
