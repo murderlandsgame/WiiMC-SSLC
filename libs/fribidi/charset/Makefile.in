@@ -54,6 +54,9 @@ am_libfribidi_char_sets_la_OBJECTS = fribidi-char-sets.lo \
 	fribidi-char-sets-iso8859-8.lo fribidi-char-sets-utf8.lo
 libfribidi_char_sets_la_OBJECTS =  \
 	$(am_libfribidi_char_sets_la_OBJECTS)
+ LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
+	--mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) \
+	$(LDFLAGS) -o $@
 libfribidi_char_sets_la_LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 	$(libfribidi_char_sets_la_LDFLAGS) $(LDFLAGS) -o $@
@@ -66,9 +69,6 @@ LTCOMPILE = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
 	--mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \
 	$(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
 CCLD = $(CC)
-LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
-	--mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) \
-	$(LDFLAGS) -o $@
 SOURCES = $(libfribidi_char_sets_la_SOURCES)
 DIST_SOURCES = $(libfribidi_char_sets_la_SOURCES)
 am__pkginclude_HEADERS_DIST = fribidi-char-sets.h \
