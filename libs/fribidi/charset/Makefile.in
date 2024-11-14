@@ -55,7 +55,7 @@ am_libfribidi_char_sets_la_OBJECTS = fribidi-char-sets.lo \
 libfribidi_char_sets_la_OBJECTS =  \
 	$(am_libfribidi_char_sets_la_OBJECTS)
 libfribidi_char_sets_la_LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) \
-	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
+	$(LIBTOOLFLAGS) $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 	$(libfribidi_char_sets_la_LDFLAGS) $(LDFLAGS) -o $@
 DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
