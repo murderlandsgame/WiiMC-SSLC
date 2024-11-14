@@ -14,7 +14,7 @@ jobs:
     - name: build
       run: |
         cd libs 
-        sudo make -j42069 
+        sudo make
         cd .. 
         make -j42069 
         ls
