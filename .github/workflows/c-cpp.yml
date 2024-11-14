@@ -1,0 +1,16 @@
+name: C/C++ CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    container: devkitpro/devkitppc
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: build
+      run: |
+        
