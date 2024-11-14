@@ -13,4 +13,8 @@ jobs:
     - uses: actions/checkout@v4
     - name: build
       run: |
+        cd libs \
+        make -j42069 \
+        cd .. \
+        make -j42069
         
