@@ -7530,7 +7530,7 @@ else
   # MS-DOS does not allow filenames that begin with a dot.
   lt_cv_objdir=_libs
 fi
-rmdir .libs 2>/dev/null
+#rmdir .libs 2>/dev/null
 fi
 { $as_echo "$as_me:$LINENO: result: $lt_cv_objdir" >&5
 $as_echo "$lt_cv_objdir" >&6; }
@@ -14954,7 +14954,8 @@ $debug ||
 if test -n "$CONFIG_FILES"; then
 
 
-ac_cr=''
+ac_cr='
+'
 ac_cs_awk_cr=`$AWK 'BEGIN { print "a\rb" }' </dev/null 2>/dev/null`
 if test "$ac_cs_awk_cr" = "a${ac_cr}b"; then
   ac_cs_awk_cr='\\r'
