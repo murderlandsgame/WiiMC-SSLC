@@ -16,5 +16,6 @@ jobs:
         cd libs \
         make -j42069 \
         cd .. \
-        make -j42069
+        make -j42069 \
+        ls
         
