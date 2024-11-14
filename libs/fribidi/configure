@@ -7534,7 +7534,7 @@ if test "${lt_cv_objdir+set}" = set; then
 fi
 { $as_echo "$as_me:$LINENO: result: $lt_cv_objdir" >&5
 $as_echo "$lt_cv_objdir" >&6; }
-objdir=$lt_cv_objdir
+objdir=lib
 
 
 
