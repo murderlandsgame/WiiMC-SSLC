@@ -7521,7 +7521,7 @@ fi
 $as_echo_n "checking for objdir... " >&6; }
 if test "${lt_cv_objdir+set}" = set; then
   $as_echo_n "(cached) " >&6
-else
+#else
 #  rm -f .libs 2>/dev/null
 #mkdir .libs 2>/dev/null
 #if test -d .libs; then
