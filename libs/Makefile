@@ -1,4 +1,4 @@
-COMMAND1 = chmod +wrx configure && ./configure && make && make install
+COMMAND1 = chmod +wrx configure && (CC=$(DEVKITPPC)/bin/powerpc-eabi-gcc CXX=$(DEVKITPPC)/bin/powerpc-eabi-g++ ./configure) && make && make install
 
 all: dir1 dir2 dir3
 
