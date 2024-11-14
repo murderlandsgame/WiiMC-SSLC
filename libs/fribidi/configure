@@ -7541,7 +7541,7 @@ objdir=$lt_cv_objdir
 
 
 cat >>confdefs.h <<_ACEOF
-#define LT_OBJDIR "$lt_cv_objdir/"
+#define LT_OBJDIR "$lt_cv_objdir"
 _ACEOF
 
 
